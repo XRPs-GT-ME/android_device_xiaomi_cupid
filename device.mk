@@ -28,3 +28,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Miui Camera
+$(call inherit-product, device/xiaomi/miuicamera-cupid/device.mk)
