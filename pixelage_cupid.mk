@@ -7,10 +7,13 @@
 # Inherit from cupid device
 $(call inherit-product, device/xiaomi/cupid/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from common pixelage configuration
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_cupid
+PIXELAGE_BUILDTYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+PRODUCT_NAME := pixelage_cupid
 PRODUCT_DEVICE := cupid
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
