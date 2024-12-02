@@ -8,12 +8,12 @@
 $(call inherit-product, device/xiaomi/cupid/device.mk)
 
 # Inherit from common pixelage configuration
-$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PIXELAGE_BUILDTYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+PIXEFY_MAINTAINER := itsXRP
 
-PRODUCT_NAME := pixelage_cupid
+PRODUCT_NAME := aosp_cupid
 PRODUCT_DEVICE := cupid
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi

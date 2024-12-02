@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_cupid.mk
+    $(LOCAL_DIR)/aosp_cupid.mk
