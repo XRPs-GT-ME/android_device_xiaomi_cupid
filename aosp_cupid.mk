@@ -7,10 +7,15 @@
 # Inherit from cupid device
 $(call inherit-product, device/xiaomi/cupid/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from common AOSP configuration
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_cupid
+#Pixefy Strings
+CUSTOM_BUILD_TYPE := OFFICIAL
+PIXEFY_MAINTAINER := itsXRP
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := aosp_cupid
 PRODUCT_DEVICE := cupid
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
